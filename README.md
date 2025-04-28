@@ -89,41 +89,44 @@ npm run dev
 
 ## Directory Structure
 
+```plaintext
 subscription-tracker-api/
 ├── .gitignore
 ├── README.md
 ├── app.js
 ├── config/
-│ ├── arcjet.js
-│ ├── env.js
-│ ├── nodemailer.js
-│ └── upstash.js
+│   ├── arcjet.js
+│   ├── env.js
+│   ├── nodemailer.js
+│   └── upstash.js
 ├── controllers/
-│ ├── auth.controller.js
-│ ├── subscription.controller.js
-│ ├── user.controller.js
-│ └── workflow.controller.js
+│   ├── auth.controller.js
+│   ├── subscription.controller.js
+│   ├── user.controller.js
+│   └── workflow.controller.js
 ├── database/
-│ └── mongodb.js
+│   └── mongodb.js
 ├── middlewares/
-│ ├── arcjet.middleware.js
-│ ├── auth.middleware.js
-│ └── error.middleware.js
+│   ├── arcjet.middleware.js
+│   ├── auth.middleware.js
+│   └── error.middleware.js
 ├── models/
-│ ├── subscription.model.js
-│ └── user.model.js
+│   ├── subscription.model.js
+│   └── user.model.js
 ├── routes/
-│ ├── auth.route.js
-│ ├── subscription.route.js
-│ ├── user.route.js
-│ └── workflow.route.js
+│   ├── auth.route.js
+│   ├── subscription.route.js
+│   ├── user.route.js
+│   └── workflow.route.js
 ├── utils/
-│ ├── email-template.js
-│ ├── logger.js
-│ └── send-email.js
+│   ├── email-template.js
+│   ├── logger.js
+│   └── send-email.js
 ├── package-lock.json
 ├── package.json
 └── workflow.txt
+
+```
 
 ---
 
