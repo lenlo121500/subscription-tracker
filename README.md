@@ -63,23 +63,27 @@ Built with scalability, security, and real-world patterns in mind.
 ```bash
 git clone https://github.com/lenlo121500/subscription-tracker
 cd subscription-tracker
-
 ```
 
-2. Install dependencies
+### 2. Install dependencies
 
-   - npm install
+```bash
+    npm install
+```
 
-3. Create a .env file and configure:
+### 3. Create a .env file and configure:
 
-   - PORT=5000
-   - MONGO_URI=your_mongodb_connection_string
-   - JWT_SECRET=your_jwt_secret
-   - SERVER_URL=http://localhost:5000
-   - QSTASH_TOKEN=your_upstash_qstash_token
+- PORT=5000
+- MONGO_URI=your_mongodb_connection_string
+- JWT_SECRET=your_jwt_secret
+- SERVER_URL=http://localhost:5000
+- QSTASH_TOKEN=your_upstash_qstash_token
 
-4. Start the server
-   - npm run dev
+### 4. Start the server
+
+```bash
+npm run dev
+```
 
 ---
 
@@ -152,29 +156,42 @@ flowchart TD
 
     O -- Yes --> K
     O -- No --> P[Workflow Completed]
+```
 
 ---
 
-##  Future Improvements
-  - Implement Soft Deletion for Users
+## Future Improvements
 
-  - Add Refresh Tokens for Authentication
+### Authentication
 
-  - Full Admin Dashboard (Stats, Active Subscriptions, Revenue)
+- Add Refresh Tokens
+- Implement Soft Deletion for Users
 
-  - Add Stripe for Paid Subscription Payments
+### Admin Features
 
-  - Add Webhooks for external event listening
+- Full Admin Dashboard (Stats, Active Subscriptions, Revenue)
 
-  - Build Public API Docs (Swagger or Postman)
+### Payments
 
-  - Add Grace Period logic before full subscription cancellation
+- Add Stripe for Paid Subscription Payments
+- Add Grace Period logic before full cancellation
 
-  - Implement Email Templates for better UX
+### Notifications
 
-  - Multi-language Support (Localization)
+- Add Webhooks for external event listening
+- Implement Email Templates for better UX
 
-  - Deploy to Vercel, Render, or AWS
+### Internationalization
+
+- Multi-language Support (Localization)
+
+### Deployment
+
+- Deploy to Vercel, Render, or AWS
+
+### Documentation
+
+- Build Public API Docs (Swagger or Postman)
 
 ---
 
@@ -182,6 +199,3 @@ flowchart TD
 
 Contributions are welcome!
 Fork the project, create a branch, commit your changes, and open a pull request.
-
-
-```
